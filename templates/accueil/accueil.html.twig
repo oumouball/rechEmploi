@@ -1,0 +1,199 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!{% endblock %}
+
+{% block body %}
+<body>
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Recherche Emploi</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="#about">Nos offres Stages</a></li>
+          <li><a class="nav-link scrollto" href="#services">Nos offres D'emploi</a></li>
+           
+          <li class="dropdown"><a href="#"><span>Poster CV</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>       
+            <li><a href="{{path('cv_new')}}">AJOUTER SON CV</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li> <a href="{{path('connexion')}}" class="btn-get-started scrollto">Deconnexion</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-container">
+      <h3>Welcome to <strong>Here</strong></h3>
+      <h1>Plateforme unique. Possibilités infinies.</h1>
+      <h2>Fournir une expérience cohérente aux candidats grâce à des flux de travail et des modèles préétablis et personnalisables</h2>
+     
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+        <br><br><br><br><br><br><br><br><br> <h2>NOS OFFRES STAGES</h2>
+          
+          <p>Candidature spontanée pour un stage : comment faire une demande de stage ?
+             Et comment obtenir un poste de stagier(e) dans nos entreprise
+             Veuillez poster votre CV et creer un compte pour beneficier de nos postes
+          </p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Pourquoi envoyer une demande de stage ?
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> La demande de stage permet de vous démarquer</li>
+              <li><i class="ri-check-double-line"></i> De devancer le besoin d'une entreprise</li>
+              <li><i class="ri-check-double-line"></i> De démontrer votre extrême motivation et votre désir d'intégrer l'entreprise...</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Dans le cadre d'une candidature spontanée pour un stage,
+               vous pouvez solliciter des entreprises avec votre CV et une lettre de demande de stage. 
+               En effet, si vous recherchez un stage, il est parfois très efficace de devancer le besoin des entreprises en proposant votre énergie dans le cadre d'un stage.
+               
+            </p>
+            <a href="{{path('cv_new')}}" class="btn-learn-more">Poster CV en Ligne</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>NOS OFFRE D'EMPLOI</h2>
+          <h3>Direct entreprises, service gratuit</h3>
+          <p>Nous partageons tous nos conseils, nos bons plans, des offres validées et sélectionnées par notre équipe sur place.
+Soyez aidés et accompagnés pour trouver facilement un stage ou un job à Malte.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Responsable Marketing et Communication</a></h4>
+              <p class="description">Si vous êtes intéressé par le commerce ou la communication, 
+                  le marketing pourrait bien vous plaire.
+                  Si vous etes diplomer vous pouvez vous inscrire dans le Plateforme
+                  et postiluer votre cv afin de beneficier de nos postes</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Développeur Fullstack</a></h4>
+              <p class="description">une structure de la place est à la recherche d'un développeur fullstack pour le développement d'une application web/mobile.
+          intéressé ? envoie nous ton cv dès maintenant.
+          profil Recherché:
+          • avoir une expérience avérée en développement web/mobile ;
+          • avoir une bonne maîtrise du frontend html/css;
+          • avoir une bonne maîtrise du backend java/jee, node.js ...</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Comptable des matières</a></h4>
+              <p class="description">Sous l’autorité du Chef de la Division de l’Administration générale (DAG), 
+              le Comptable des matières aura les missions, tâches et profil suivants.
+              Missions principales
+            • Gérer les matières de l’Agence ;
+            • Gérer le patrimoine mobilier et immobilier de l’Agence et en assurer la garde ;
+            • Tenir les comptes des matières à jour
+                 </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Un Responsable Réseau de stations</a></h4>
+              <p class="description">Le cabinet Amd Corporate recrute pour un de ses clients un Responsable Réseau de stations
+            Critères d'éligibilité:
+          - Licence 3 En Commerce ou diplôme équivalent
+          - Minimum 7ans d'expérience dans le domaine
+           Postulez votre cv </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3>Contact <span>Us</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https:/www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</body>
+{% endblock %}
